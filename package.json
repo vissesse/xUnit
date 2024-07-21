@@ -1,0 +1,14 @@
+{
+  "name": "xunit",
+  "version": "1.0.0",
+  "description": "RUN find . -name \"*.py\" | entr -r python3 -m unittest discover",
+  "main": "src/main.py",
+  "directories": {
+    "test": "nodemon --exec python3 src/main.py"
+  },
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "Carlos Vissesse",
+  "license": "MIT"
+}
