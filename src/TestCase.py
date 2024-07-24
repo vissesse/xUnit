@@ -5,8 +5,7 @@ class TestCase:
     def __init__(self, name: str):
         self.name = name
 
-    def run(self):
-        result = TestResult()
+    def run(self, result:TestResult): 
         result.testStarted()
         self.setUp()
         try:
@@ -14,8 +13,7 @@ class TestCase:
             method()
         except:
             result.testFailed()
-        self.tearDown()
-        return result
+        self.tearDown() 
 
     def setUp(self):
         pass
