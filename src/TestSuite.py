@@ -1,4 +1,5 @@
-from TestResult import TestResult
+from typing import List  
+from testCaseTest import TestCaseTest
 
 
 class TestSuite:
@@ -6,7 +7,7 @@ class TestSuite:
     def __init__(self):
         self.tests = []
         
-    def add(self, test):
+    def add(self, test:TestCaseTest):
         self.tests.append(test)
     
     def run(self, result): 
