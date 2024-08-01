@@ -1,13 +1,9 @@
-from typing import List  
-from testCaseTest import TestCaseTest
-
-
 class TestSuite:
 
     def __init__(self):
         self.tests = []
         
-    def add(self, test:TestCaseTest):
+    def add(self, test):
         self.tests.append(test)
     
     def run(self, result): 
